@@ -1,0 +1,10 @@
+# Local Claude Code settings (user-specific permissions)
+.claude/settings.local.json
+
+# Graphify outputs — derivable from the markdown files; don't commit
+graphify-out/
+
+# OS / editor cruft
+.DS_Store
+*.swp
+*~
