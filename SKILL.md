@@ -123,6 +123,17 @@ Read `references/06-tool-allowlist.md`. Default: minimum privilege. Reviewer = `
 | `agent-templates/migration-planner.md` | Schema/API migration impact + sequencing |
 | `agent-templates/security-auditor.md` | Read-only vulnerability scan |
 
+## Examples (concrete workflows)
+
+| Example | When |
+|---|---|
+| `examples/orchestrator-worker.md` | Main agent + N specialized workers (single domain owner per task) |
+| `examples/parallel-exploration.md` | 4 explorers fan out across non-overlapping areas |
+| `examples/plan-then-execute.md` | Cross-layer (backend → SDK → frontend), strict sequence |
+| `examples/code-review-handoff.md` | Implementer → reviewer (Q2 demonstration) |
+| `examples/three-way-hybrid.md` | Gemini → Codex → Claude pipeline for cost-optimal mass refactor |
+| `examples/iterative-codex-review.md` | 1-3 round adversarial Codex review of a draft design before shipping; includes non-convergence handling and user-escalation protocol |
+
 ## Anti-patterns cheatsheet
 
 1. **Over-spawning** — Opus tends to open sub-agents reflexively. If the task is < 3 steps, don't.
